@@ -1,8 +1,8 @@
 import PostCard from "./components/PostCard";
-import { posts } from "./lib/posts";
+import { getPosts } from "./lib/posts";
 
-
-export default function Home() {
+export default async function Home() {
+  const posts = await getPosts()
 
   return (
     <main>
