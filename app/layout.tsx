@@ -1,5 +1,14 @@
+import { Metadata } from "next";
 import TopBar from "./components/lootlayout"
 import "./globals.css"
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Blog',
+    default: 'Blog',
+  },
+  description: '初めてのNext.jsBlogサイト',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
