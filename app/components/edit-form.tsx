@@ -1,5 +1,11 @@
-import { Post } from "@prisma/client";
 import { editPost } from "@/app/actions/editPost";
+
+type Post = {
+  id: number
+  title: string
+  text: string
+  createdAt: Date
+}
 
 export default function EditFormUI({post} : {post:Post|undefined}) {
     return (
